@@ -1,0 +1,12 @@
+.layout{
+    display: flex;
+    align-items: center; /* left and right */
+    justify-content: center; 
+}
+.blue-eyes-dragon{
+    display: grid;
+    background-color: tomato;
+    align-items: center; /* left and right */
+    justify-content: center; 
+    
+}

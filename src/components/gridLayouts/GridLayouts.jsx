@@ -17,8 +17,7 @@ export const GridOne = () =>{
        isDraggable={false}
       // isResizable={false}
       >
-        
-      {/* <div key="klementynka-btn"><img key="klementynka-btn" src={btn1} alt="klementyka przycisk" /></div> */}
+
   </ResponsiveGridLayout>
     )
 }

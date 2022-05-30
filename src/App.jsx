@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/home/Home";
 import Klementyna from "./components/contexts/klementyna/Klementyna";
 import Antoni from "./components/antoni/Antoni";
+import AntoniVideos from "./components/antoniVideos/AntoniVideo";
 import { Loading1 } from "./components/loading/Loading";
 import { ThemeProvider } from "./components/contexts/StyleContext";
 
@@ -24,6 +25,7 @@ useEffect(()=>{
                     <Routes>
                         <Route exact path="/" element={<Home />} />
                         <Route path="/antoni" element={<Antoni />} />
+                        <Route path="/antoniVideos" element={<AntoniVideos />} />
                         <Route path="/klementyna" element={<Klementyna />} />
                     </Routes>
                 </Router>

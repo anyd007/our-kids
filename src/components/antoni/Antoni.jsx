@@ -24,12 +24,15 @@ useEffect(()=>{
             <div className="antonichoose">
                 <h4 className="title">WYBIERZ PROSZĘ CO CHCESZ ZOBACZYĆ:</h4>
                 <div>
-                <div className="movies"><h5>OTWÓRZ SWOJE FILMY</h5></div>
+                <div onClick={()=>history('/antoniVideos')} className="movies"><h5>OTWÓRZ SWOJE FILMY</h5></div>
                 <div className="pictures"><h5>OTWÓRZ SWOJE ZDJĘCIA</h5></div>
                 </div>
             </div>
-            <div className="btn">
+            <div>
                 <button type="button" className="btn antoniExitBtn" onClick={()=>history("/")}>WYJDŹ</button>
+            </div>
+            <div className="videos">
+                
             </div>
         </div>
         </>

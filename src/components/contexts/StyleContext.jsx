@@ -1,6 +1,7 @@
 import React, { createContext, useContext, useState } from "react";
 import image1 from "../imgs/collage.avif"
 import minons from "../imgs/minions-wallpaper.avif"
+import bob from "../imgs/spongebob-wallpaper.avif"
 import princess from "../imgs/wp2439373-disney-xd-wallpapers.avif"
 import "./contex.css"
 
@@ -35,6 +36,21 @@ const antoni={
     top:0,
     bottom:0
 }
+const antoniMedia ={
+    fontFamily: "Appleberry, truetype",
+    color: "blue",
+    fontWeight: "bold",
+    backgroundImage: `url(${bob})`,
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    position: "fixed",
+    backgroundPosition: "center",
+    width: "100vw",
+    // overflowY: "scroll",
+    // overflowX:"hidden",
+    top:0,
+    bottom:0
+}
 const klementyna={
     fontFamily: "MEgalopolis Extra",
     color: "blue",
@@ -60,10 +76,11 @@ export const useTheme = ()=>{
 export const ThemeProvider = ({children})=>{
  const [generalStyle,setGeneralStyle] = useState(general)
  const [antoniStyle, setAntoniStyle] = useState(antoni)
+ const [antoniMedias, setAntoniMedias] = useState(antoniMedia)
  const [klemensStyle, setKlemensStyle] = useState(klementyna)
  
  return(
-     <ThemeContext.Provider value={{generalStyle, setGeneralStyle, antoniStyle, setAntoniStyle, klemensStyle, setKlemensStyle}}>
+     <ThemeContext.Provider value={{generalStyle, setGeneralStyle, antoniStyle, setAntoniStyle, klemensStyle, setKlemensStyle, antoniMedias, setAntoniMedias}}>
          {children}
      </ThemeContext.Provider>
  )

@@ -18,7 +18,7 @@ return(
     <>
         {loading && <Loading1 />}
         <div style={klemensStyle} className="klemensContener">
-        <div className="title">
+        <div className="klemenstitle">
             <h2>WITAJ KLEMENTYNKO</h2>
         </div>
         <div className="klemensChoose">

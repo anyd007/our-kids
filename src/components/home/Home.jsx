@@ -12,6 +12,7 @@ const Home = () => {
   const { generalStyle } = useTheme();
   const handleAntoni=()=>{
     history("/antoni")
+    console.log(process.env.REACT_APP_PASSWORD);
   }
   
   return (

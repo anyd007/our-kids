@@ -31,7 +31,7 @@ const antoni={
     backgroundAttachment: "fixed",
     backgroundPosition: "center",
     height: "100vh",
-    overflowY: "scroll",
+    overflowY: "auto",
     overflowX:"hidden",
     top:0,
     bottom:0
@@ -46,8 +46,8 @@ const antoniMedia ={
     position: "fixed",
     backgroundPosition: "center",
     width: "100vw",
-    // overflowY: "scroll",
-    // overflowX:"hidden",
+    overflowY: "auto",
+    overflowX:"hidden",
     top:0,
     bottom:0
 }
@@ -61,7 +61,7 @@ const klementyna={
     backgroundAttachment: "fixed",
     backgroundPosition: "center",
     height: "100vh",
-    overflowY: "scroll",
+    overflowY: "auto",
     overflowX:"hidden",
     top:0,
     bottom:0

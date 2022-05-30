@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { MotherDay22 } from "../apis/AntoniApi";
 import ReactPlayer from 'react-player/youtube'
 import { useTheme } from "../contexts/StyleContext";
-import { Loading1 } from "../loading/Loading";
+import { Loading2 } from "../loading/Loading";
 import "./antoniVideo.css"
 
 const AntoniVideos = () =>{
@@ -15,7 +15,7 @@ const history = useNavigate()
 
     return(
         <>
-      {loading && <Loading1 />}
+      {loading && <Loading2 />}
     <div style={antoniMedias} className="antoniMediaContener">
         <div>
             <h2>DZIEŃ MAMY I TATY ROK 2022<br />WYTĘPY ANTONIEGO</h2>

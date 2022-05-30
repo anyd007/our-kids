@@ -3,14 +3,17 @@
     src: url("../fonts/appleberry.ttf") format('truetype');;
 }
 .loading{
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    position: relative;
     text-align: center;
-    position: absolute;
     left: 50%;
-    top: 40%;
-    transform: translate(-50%, -60%);
+    transform: translate(-50%);
     z-index: 3;
 }
 .blur{
+    overflow: hidden;
     z-index: 2;
     position: fixed;
     top: 0;
@@ -23,8 +26,13 @@
 
 }
 .loadingText{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%);
     font-family: Appleberry;
-    margin-top: 3px;
     color: greenyellow;
     font-size: 50px;
     letter-spacing: 2px;
@@ -32,6 +40,6 @@
 .reactLoader{
     position: absolute;
     left: 50%;
-    top: 30%;
+    top: 25%;
     transform: translate(-50%);
 }

@@ -14,3 +14,14 @@ export const Loading1 = () =>{
     </>
     )
 }
+export const Loading2 = () =>{
+    return(
+    <>
+    <div className="blur"></div>
+     <section className="loading">
+    <ReactLoading  className="reactLoader" type={"bubbles"} color={"greenyellow"} height={100} width={175} />
+    <h4 className="loadingText">WCZYTUJEMY FILM ANTONIEGO GĘBALI, PROSZĘ CZEKAĆ...</h4>
+    </section>
+    </>
+    )
+}

@@ -12,7 +12,11 @@ const general={
     position: "fixed",
     backgroundPosition: "center",
     height: "100vh",
-    width: "100vw"
+    width: "100vw",
+    "overflow-y": "scroll",
+    "overflow-h":"hidden",
+    top:0,
+    bottom:0
     
 }
 const antoni={
@@ -25,6 +29,10 @@ const antoni={
     backgroundAttachment: "fixed",
     backgroundPosition: "center",
     height: "100vh",
+    "overflow-y": "scroll",
+    "overflow-h":"hidden",
+    top:0,
+    bottom:0
 }
 
 const ThemeContext = createContext()

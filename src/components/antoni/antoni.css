@@ -13,6 +13,7 @@ h2{
     text-align: center;
 } */
 .title{
+    margin-top: 0%;
     font-size: 50px;
     text-shadow: 0 2px 1px black, 
       -1px 3px 1px rgb(28, 27, 27), 
@@ -30,7 +31,7 @@ h5{
     border: 3px solid purple;
     position: absolute;
     left: 16%;
-    top: 60%;
+    top: 65%;
     transform: translateY(-40%);
     height: 200px;
     width: 200px;
@@ -56,7 +57,7 @@ h5{
     border: 3px solid purple;
     position: absolute;
     right: 16%;
-    top: 60%;
+    top: 65%;
     transform: translateY(-40%);
     height: 200px;
     width: 200px;

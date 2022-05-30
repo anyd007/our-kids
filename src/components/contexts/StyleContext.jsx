@@ -13,8 +13,8 @@ const general={
     backgroundPosition: "center",
     height: "100vh",
     width: "100vw",
-    "overflow-y": "scroll",
-    "overflow-h":"hidden",
+    overflowY: "scroll",
+    overflowX:"hidden",
     top:0,
     bottom:0
     

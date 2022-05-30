@@ -10,10 +10,9 @@ const AntoniVideos = () =>{
 const { antoniMedias } = useTheme()
 const [loading, setLoading] = useState(true)
 const [getMotherDay22, setGetMotherDay22] = useState(MotherDay22)
-// const handleLoader = () =>{
-//   return  setLoading(false)
-// }
 const history = useNavigate()
+
+
     return(
         <>
       {loading && <Loading1 />}
@@ -29,7 +28,8 @@ const history = useNavigate()
        controls
        height={el.height}
        width={el.with}
-       onReady={()=>setLoading(false)}>    
+       onReady={()=>setLoading(false)}
+       >    
        </ReactPlayer>))}
         </div>
         <div>

@@ -6,11 +6,11 @@
     width: 80%;
     text-align: center;
     position: absolute;
-    top: 35%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%);
 }
-.antoniMediaContener > h2{
+.antoniMediaContener h2{
     font-size: 80px;
 }
 .reactPlayer{

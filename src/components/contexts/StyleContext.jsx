@@ -1,21 +1,22 @@
 import React, { createContext, useContext, useState } from "react";
 import image1 from "../imgs/collage.avif"
 import minons from "../imgs/minions-wallpaper.avif"
+import "./contex.css"
 
 const general={
-    fontFamily: "Luckiest Guy",
+    fontFamily: "Appleberry, truetype",
     color: "white",
-    fontWeight: "bold",
     backgroundImage: `url(${image1})`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
-    backgroundAttachment: "fixed",
+    position: "fixed",
     backgroundPosition: "center",
     height: "100vh",
+    width: "100vw"
     
 }
 const antoni={
-    fontFamily: "Luckiest Guy",
+    fontFamily: "Appleberry, truetype",
     color: "blue",
     fontWeight: "bold",
     backgroundImage: `url(${minons})`,

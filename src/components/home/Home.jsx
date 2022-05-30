@@ -1,12 +1,13 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import { Loading1 } from "../loading/Loading";
 import { useNavigate } from "react-router-dom";
 import { useTheme } from "../contexts/StyleContext";
-import { GridOne } from "../gridLayouts/GridLayouts";
 import btn1 from "../imgs/kementynaBtn.avif"
 import btn2 from "../imgs/antoni-btn.avif"
 import "./home.css";
 
 const Home = () => {
+  const [loading, setLoading]  = useState(false)
     const history = useNavigate()
   const { generalStyle } = useTheme();
   const handleAntoni=()=>{

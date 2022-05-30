@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "MEgalopolis Extra";
+    src: url("../fonts/MegalopolisExtra-Regular.eot");
+    src: url("../fonts/MegalopolisExtra-Regular.woff") format("woff");
+    src: url("../fonts/MegalopolisExtra-Regular.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Appleberry";
+    src: url("../fonts/appleberry.ttf") format('truetype');;
+}

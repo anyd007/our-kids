@@ -19,9 +19,9 @@ h1{
     display: inline-block;
     position: relative;
     left: 30%;
-    margin-top: 12%;
+    margin-top: 9%;
 }
-.buttonsDiv::before{
+.buttonsDiv::after{
   content: attr(data-hover);
   visibility: hidden;
   opacity: 0;
@@ -33,7 +33,7 @@ h1{
   z-index: 1;
   transition: .7s ease;
 }
-.buttonsDiv:hover::before{
+.buttonsDiv:hover::after{
     visibility: visible;
     opacity: 1;
 }
@@ -70,9 +70,9 @@ h1{
     display: inline-block;
     position: relative;
     right: -72%;
-    margin-top: 12%;
+    margin-top: 9%;
 }
-.buttonsDiv2::before{
+.buttonsDiv2::after{
     content: attr(data-hover2);
     visibility: hidden;
     opacity: 0;
@@ -84,7 +84,7 @@ h1{
     z-index: 1;
     transition: .7s ease;
   }
-  .buttonsDiv2:hover::before{
+  .buttonsDiv2:hover::after{
     visibility: visible;
     opacity: 1;
 }

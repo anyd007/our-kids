@@ -19,7 +19,7 @@ const Home = () => {
   <div className="title">
       <h1>NASZE KOCHANE SKARBY<br />KLEMENTYNA I ANTONI</h1>
   </div>
-  <button  className="buttonsDiv" data-hover="WCISNIJ">
+  <button onClick={()=>history("/klementyna")} className="buttonsDiv" data-hover="WCISNIJ">
       <img className="klementynaBtn" src={btn1} alt="klementyka przycisk" />
       <div className="img-text">TUTAJ</div>
     </button>

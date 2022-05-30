@@ -16,7 +16,8 @@ useEffect(()=>{
 
     return(
         <>
-      {loading ? <Loading1 /> : <div style={antoniStyle} className="antoniContener">
+      {loading && <Loading1 />} 
+      <div style={antoniStyle} className="antoniContener">
             <div className="antoniTitle">
                 <h2>HELLO ANTONI</h2>
             </div>
@@ -30,7 +31,7 @@ useEffect(()=>{
             <div className="btn">
                 <button type="button" className="btn antoniExitBtn" onClick={()=>history("/")}>WYJDŹ</button>
             </div>
-        </div>}
+        </div>
         </>
     )
 }

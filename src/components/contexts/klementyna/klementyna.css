@@ -1,0 +1,11 @@
+
+
+.klemensChoose{
+    text-align: center;
+}
+H4{
+    font-size: 50px;
+    text-shadow: 0 2px 1px black, 
+    -1px 3px 1px rgb(28, 27, 27), 
+    -2px 5px 1px rgb(71, 67, 67);
+}

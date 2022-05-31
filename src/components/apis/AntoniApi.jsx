@@ -2,11 +2,6 @@ import React, { useRef } from "react";
 import ReactPlayer from 'react-player/youtube'
 import "./apis.css"
 
-const handleFullscreen = () =>{
- document.querySelector(".player").requestFullscreen()
-}
-
-
 export const MotherDay22 =[
     {
         id:"id-1",

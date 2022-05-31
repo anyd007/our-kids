@@ -10,7 +10,7 @@ const handleFullscreen = () =>{
 export const MotherDay22 =[
     {
         id:"id-1",
-        link:'https://youtu.be/sJe1bxhG7lk',
+        link:process.env.REACT_APP_ANTONI_VIDEO1,
         alt:'',
         description:'video 1',
         with:"250px",
@@ -19,7 +19,7 @@ export const MotherDay22 =[
     },
     {
         id:"id-2",
-        link:"https://youtu.be/QAfF4fiTcVw",
+        link:process.env.REACT_APP_ANTONI_VIDEO2,
         alt:"",
         description: "video-2",
         with:"250px",
@@ -27,7 +27,7 @@ export const MotherDay22 =[
     },
     {
         id:"id-3",
-        link:"https://youtu.be/qWcIafQl_4w",
+        link:process.env.REACT_APP_ANTONI_VIDEO3,
         alt:"",
         description: "video-2",
         with:"250px",
@@ -35,7 +35,7 @@ export const MotherDay22 =[
     },
     {
         id:"id-4",
-        link:"https://youtu.be/KwpTjDah13M",
+        link:process.env.REACT_APP_ANTONI_VIDEO4,
         alt:"",
         description: "video-2",
         with:"250px",

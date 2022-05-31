@@ -10,6 +10,9 @@ const AntoniVideos = () =>{
 const { antoniMedias } = useTheme()
 const [loading, setLoading] = useState(true)
 const [getMotherDay22, setGetMotherDay22] = useState(MotherDay22)
+useEffect(()=>{
+    setGetMotherDay22(MotherDay22)
+},[])
 const history = useNavigate()
 
 

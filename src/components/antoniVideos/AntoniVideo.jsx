@@ -3,13 +3,14 @@ import { useNavigate } from "react-router-dom";
 import { MotherDay22 } from "../apis/AntoniApi";
 import ReactPlayer from "react-player/youtube";
 import { useTheme } from "../contexts/StyleContext";
-import { Loading2 } from "../loading/Loading";
+import { Loading2, Loading1 } from "../loading/Loading";
 import { AiOutlineCloseCircle} from 'react-icons/ai';
 import "./antoniVideo.css";
 
 const AntoniVideos = (props) => {
   const { antoniMedias } = useTheme();
   const [loading, setLoading] = useState(false);
+  const [loading2, setLoading2] = useState(false)
   const [showVideo, setShowVideo] = useState(false);
   const [videos, setVideos] = useState([]);
   const [getMotherDay22, setGetMotherDay22] = useState(MotherDay22);
@@ -21,15 +22,21 @@ const AntoniVideos = (props) => {
     let x = getMotherDay22.filter((video) => video.id === item.id);
     setVideos(x);
     setShowVideo(true);
-    setLoading(true)
+    setLoading2(true)
   };
   const handleCloseVideo = () =>{
       setShowVideo(false)
   }
+  useEffect(()=>{
+      setTimeout(() => {
+        setLoading(false)
+      }, 2500);
+  })
 
   return (
     <>
       <div style={antoniMedias} className="antoniMediaContener">
+      {loading && <Loading1 />} 
         <div>
           <h2>DZIEŃ MAMY I TATY ROK 2022<br />WYTĘPY ANTONIEGO
           </h2>
@@ -43,7 +50,7 @@ const AntoniVideos = (props) => {
             id={el.id}
             type="button"><p>{el.button}</p></div>))}
         </div>
-        {loading && <Loading2 />}
+        {loading2 && <Loading2 />}
         <div className="antoniVideoContener">
           {showVideo && (
         <span className="wrapper">
@@ -56,7 +63,7 @@ const AntoniVideos = (props) => {
                 controls
                 height={videos[0].height}
                 width={videos[0].width}
-                onReady={() => setLoading(false)}
+                onReady={() => setLoading2(false)}
               />
         </span>
           )}

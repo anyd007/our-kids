@@ -18,7 +18,7 @@ export const Loading2 = () =>{
     return(
     <>
     <div className="blur2"></div>
-     <section className="loading">
+     <section className="loading2">
     <ReactLoading  className="reactLoader" type={"bubbles"} color={"greenyellow"} height={100} width={175} />
     <h4 className="loadingText">WCZYTUJEMY FILM ANTONIEGO GĘBALI, PROSZĘ CZEKAĆ...</h4>
     </section>

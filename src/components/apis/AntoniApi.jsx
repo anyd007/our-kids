@@ -8,8 +8,8 @@ export const MotherDay22 =[
         link:process.env.REACT_APP_ANTONI_VIDEO1,
         alt:'',
         description:'video 1',
-        width:"1000px",
-        height: "570px",
+        width:"93vw",
+        height: "85vh",
         button: "FI/LM NR1"
      
     },
@@ -18,8 +18,8 @@ export const MotherDay22 =[
         link:process.env.REACT_APP_ANTONI_VIDEO2,
         alt:"",
         description: "video-2",
-        width:"1000px",
-        height: "570px",
+        width:"93vw",
+        height: "85vh",
         button: "FILM NR2"
         
     },
@@ -28,8 +28,8 @@ export const MotherDay22 =[
         link:process.env.REACT_APP_ANTONI_VIDEO3,
         alt:"",
         description: "video-2",
-        width:"1000px",
-        height: "570px",
+        width:"93vw",
+        height: "85vh",
         button: "FILM NR3"
     },
     {
@@ -37,8 +37,8 @@ export const MotherDay22 =[
         link:process.env.REACT_APP_ANTONI_VIDEO4,
         alt:"",
         description: "video-2",
-        width:"1000px",
-        height: "570px",
+        width:"93vw",
+        height: "85vh",
         button: "FILM NR4"
     }
 ]

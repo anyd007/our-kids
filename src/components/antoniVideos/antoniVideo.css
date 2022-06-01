@@ -9,7 +9,7 @@
     z-index: 5;
     position: fixed;
     left: 50%;
-    top: 70px;
+    top: 45px;
     transform: translate(-50%);
     border-radius: 10px;
     border: 4px solid blueviolet;
@@ -27,6 +27,7 @@
     z-index: 2;
     position: fixed;
     backdrop-filter: blur(5px);
+    overflow: auto;
 }
 
 .antoniExitVideo{
@@ -67,7 +68,8 @@
 }
 
 .closeVideo{
-    margin-top: 10px;
+    z-index: 10;
+    margin-top: 5px;
     margin-right: 50px;
     font-size: 50px;
     color: black;

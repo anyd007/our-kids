@@ -23,14 +23,15 @@ useEffect(()=>{
             <div className="antoniTitle">
                 <h2>HELLO ANTONI</h2>
             </div>
-            <div className="antonichoose">
+                <div className="antonichoose">
                 <h4 className="title">WYBIERZ PROSZĘ CO CHCESZ ZOBACZYĆ:</h4>
-                <div>
+                </div>
+                <div className="AntoniMediaBtns">
                 <div onClick={()=>setShowPassword(true)} className="movies"><h5>OTWÓRZ SWOJE FILMY</h5></div>
                 <div className="pictures"><h5>OTWÓRZ SWOJE ZDJĘCIA</h5></div>
                 </div>
-            </div>
-            <div>
+            
+            <div className="antoniExitBtnDiv">
                 <button type="button" className="btn antoniExitBtn" onClick={()=>history("/")}>WYJDŹ</button>
             </div>
             {showPassword && <Password />}

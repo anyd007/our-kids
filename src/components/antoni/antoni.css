@@ -27,6 +27,12 @@ h5{
     -1px 3px 1px rgb(28, 27, 27), 
     -2px 5px 1px rgb(71, 67, 67);
 }
+.AntoniMediaBtns{
+    position: relative;
+    height: auto;
+    width: 98%;
+    top: 10%;
+}
 .movies{
     border: 3px solid purple;
     position: absolute;
@@ -83,7 +89,7 @@ h5{
     position: absolute;
     left: 50%;
     top: 75%;
-    transform: translate(-50%,-25%);
+    transform: translate(-50%,-50%);
     --glow-color: rgb(217, 176, 255);
     --glow-spread-color: rgba(191, 123, 255, 0.781);
     --enhanced-glow-color: rgb(231, 206, 255);
@@ -130,3 +136,7 @@ h5{
            0 0 2.5em 2em var(--glow-spread-color),
            inset 0 0 .5em .25em var(--glow-color);
    }    
+   .antoniExitBtnDiv{
+       position: relative;
+       width: 100%;
+   }

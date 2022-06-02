@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useTheme } from "../StyleContext";
-import { Loading1 } from "../../loading/Loading";
+import { useTheme } from "../contexts/StyleContext";
+import { Loading1 } from "../loading/Loading";
 import "./klementyna.css"
 
 const Klementyna = () =>{
@@ -24,7 +24,7 @@ return(
         <div className="klemensChoose">
             <h4>WYBIERZ PROSZĘ CO CHCESZ ZROBIĆ</h4>
             <div>
-                <div className="movies"><h5>OTWÓRZ SWOJE FILMY</h5></div>
+                <div onClick={()=>history("/kelmentynaVideos")} className="movies"><h5>OTWÓRZ SWOJE FILMY</h5></div>
                 <div className="pictures"><h5>OTWÓRZ SWOJE ZDJĘCIA</h5></div>
             </div>
         </div>

@@ -3,6 +3,7 @@ import image1 from "../imgs/collage.avif"
 import minons from "../imgs/minions-wallpaper.avif"
 import bob from "../imgs/spongebob-wallpaper.avif"
 import princess from "../imgs/wp2439373-disney-xd-wallpapers.avif"
+import ponny from "../imgs/my-little-ponny-wallpaper.webp"
 import "./contex.css"
 
 const general={
@@ -66,6 +67,21 @@ const klementyna={
     top:0,
     bottom:0
 }
+const klementynaMedia={
+    fontFamily: "MEgalopolis Extra",
+    color: "blue",
+    fontWeight: "bold",
+    backgroundImage: `url(${ponny})`,
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundAttachment: "fixed",
+    backgroundPosition: "center",
+    height: "100vh",
+    overflowY: "auto",
+    overflowX:"hidden",
+    top:0,
+    bottom:0
+}
 
 const ThemeContext = createContext()
 
@@ -78,9 +94,11 @@ export const ThemeProvider = ({children})=>{
  const [antoniStyle, setAntoniStyle] = useState(antoni)
  const [antoniMedias, setAntoniMedias] = useState(antoniMedia)
  const [klemensStyle, setKlemensStyle] = useState(klementyna)
+ const [klementynaMedias, setKlementynaMedias] = useState(klementynaMedia)
  
  return(
-     <ThemeContext.Provider value={{generalStyle, setGeneralStyle, antoniStyle, setAntoniStyle, klemensStyle, setKlemensStyle, antoniMedias, setAntoniMedias}}>
+     <ThemeContext.Provider value={{generalStyle, setGeneralStyle, antoniStyle, setAntoniStyle, 
+     klemensStyle, setKlemensStyle, antoniMedias, setAntoniMedias, klementynaMedias, setKlementynaMedias}}>
          {children}
      </ThemeContext.Provider>
  )

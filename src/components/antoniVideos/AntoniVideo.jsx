@@ -42,8 +42,7 @@ const AntoniVideos = (props) => {
       <div style={antoniMedias} className="antoniMediaContener">
       {loading && <Loading1 />} 
         <div>
-          <h2>DZIEŃ MAMY I TATY ROK 2022<br />WYTĘPY ANTONIEGO
-          </h2>
+          <h2>DZIEŃ MAMY I TATY ROK 2022<br />WYTĘPY ANTONIEGO</h2>
         </div>
         <div className="buttosSection">
       {getMotherDay22 &&

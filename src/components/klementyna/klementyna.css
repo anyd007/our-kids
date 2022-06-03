@@ -24,5 +24,5 @@ h4{
 }
 .exitIcon:hover{
     color: red;
-    transform: scale(1.5);
+    transform: scale(1.5) rotate(360deg);
 }

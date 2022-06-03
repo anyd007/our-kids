@@ -19,7 +19,7 @@ export const Loading2 = () =>{
     <>
      <section className="loading2">
     <ReactLoading  className="reactLoader" type={"bubbles"} color={"greenyellow"} height={100} width={175} />
-    <h4 className="loadingText">WCZYTUJEMY FILM ANTONIEGO GĘBALI, PROSZĘ CZEKAĆ...</h4>
+    <h4 className="loadingText">WCZYTUJEMY FILM, PROSZĘ CZEKAĆ...</h4>
     </section>
     </>
     )
@@ -28,7 +28,7 @@ export const Info1 = () =>{
     return(
     <>
      <section className="info1">
-    <h4 className="info1Text">TO JUŻ KONIEC FILMU ATONIEGO, ZAMKNIJ ALBO ODTWÓRZ PONOWNIE</h4>
+    <h4 className="info1Text">TO JUŻ KONIEC FILMU, ZAMKNIJ ALBO ODTWÓRZ PONOWNIE</h4>
     </section>
     </>
     )

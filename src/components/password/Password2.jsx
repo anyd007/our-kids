@@ -22,7 +22,7 @@ const Password = () => {
       setFatal(true);
       setTestPassword([]);
     } else {
-      history("/antoniVideos");
+      history("/kelmentynaVideos");
       setFatal(false);
     }
   };

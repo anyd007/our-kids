@@ -14,75 +14,73 @@ h1{
     text-shadow: -6px 15px 4px rgba(66, 68, 90, 1);
 }
 .buttonsDiv{
-    font-family: Appleberry;
-    color: white;
+    margin: 5% 15% 5% 10%;
     display: inline-block;
-    position: relative;
-    left: 30%;
-    margin-top: 9%;
-    margin-bottom: 4%;
-}
-.buttonsDiv::after{
-  content: attr(data-hover);
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  left: 50%;
-  font-size: 30px;
-  letter-spacing: 3px;
-  transform: translate(-50%, 300%);
-  z-index: 1;
-  transition: .7s ease;
-}
-.buttonsDiv:hover::after{
-    visibility: visible;
-    opacity: 1;
-}
-.klementynaBtn{
+    background-image: url("../imgs/kementynaBtn.avif");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     cursor: pointer;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
     height: 200px;
     width: 250px;
     border-radius: 10px;
     border: 2px solid white;
     box-shadow: 8px 6px 21px 18px rgba(0, 0, 0, 1);
     transition: .7s ease;
-   }
-.img-text,.img-text2{
-    cursor: pointer;
-    font-size: 30px;
-    letter-spacing: 4px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
+    font-family: Appleberry;
+    color: white;
 }
-.klementynaBtn:hover{
+.buttonsDiv::after{
+    position: absolute;
+    left: 25%;
+  content: attr(data-hover);
+  visibility: hidden;
+  opacity: 0;
+  font-size: 30px;
+  letter-spacing: 3px;
+  z-index: 1;
+  transition: .7s ease-in;
+}
+.buttonsDiv:hover::after{
+    visibility: visible;
+    opacity: 1;
+    
+}
+.buttonsDiv:hover{
     filter: hue-rotate(90deg);
+    transform: rotateX(180deg);
     box-shadow: 8px 6px 21px 18px white
 }
-.klementynaBtn:active{
+.buttonsDiv:active{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 .buttonsDiv2{
+    margin: 5% 10% 5% 15%;
+    display: inline-block;
+    background-image: url("../imgs/antoni-btn.avif");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
     font-family: Appleberry;
     color: white;
-    display: inline-block;
-    position: relative;
-    right: -72%;
-    margin-top: 9%;
-    margin-bottom: 4%;
+    cursor: pointer;
+    height: 200px;
+    width: 250px;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 8px 6px 21px 18px rgba(0, 0, 0, 1);
+    transition: .7s ease;
 }
 .buttonsDiv2::after{
     content: attr(data-hover2);
     visibility: hidden;
     opacity: 0;
     position: absolute;
-    left: 50%;
+    right: 10%;
     font-size: 30px;
     letter-spacing: 3px;
-    transform: translate(-50%, 300%);
+    left: 7%;
     z-index: 1;
     transition: .7s ease;
   }
@@ -90,22 +88,14 @@ h1{
     visibility: visible;
     opacity: 1;
 }
-.antoniBtn{
-    cursor: pointer;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    height: 200px;
-    width: 250px;
-    border-radius: 10px;
-    border: 2px solid white;
-    box-shadow: 8px 6px 21px 18px rgba(0, 0, 0, 1);
-    transition: .7s ease;
-   }
-   .antoniBtn:hover{
+   .buttonsDiv2:hover{
     filter: hue-rotate(180deg);
+    transform: rotateZ(180deg) scale(1.2);
     box-shadow: 8px 6px 21px 18px white
 }
-.antoniBtn:active{
+.buttonsDiv2:active{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+Row{
+    text-align: center;
 }

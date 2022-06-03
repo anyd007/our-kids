@@ -18,7 +18,7 @@ export const KlemensMotherDay22 =[
             description:'video 1',
             width:"93vw",
             height: "85vh",
-            button: "FI/LM NR1"
+            button: "FI/LM NR2"
          
         },
             {
@@ -28,7 +28,7 @@ export const KlemensMotherDay22 =[
                 description:'video 1',
                 width:"93vw",
                 height: "85vh",
-                button: "FI/LM NR1"
+                button: "FI/LM NR3"
              
             },
 ]

@@ -1,6 +1,51 @@
 .rowTitle{
     text-align: center;
+    margin-top: 0%;
 }
 .titleKlemensVideo{
     font-size: 80px;
+}
+.klemensbuttons{
+    display: inline;
+    border-radius: 15px;
+    border: 2px solid blueviolet;
+    height: 150px;
+    margin: 20px;
+    width: 250px;
+    background-image: url("../../imgs/lol-surprise-png.png");
+    background-position: center, center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    transition: 1s ease;
+    cursor: pointer;
+    box-shadow: rgba(91, 37, 37, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+    rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    backdrop-filter: blur(20px);
+    transition: 0.5s ease;
+}
+.klemensbuttons p{
+    font-size: 30px;
+   margin-top: 40%;
+   letter-spacing: 2px;
+}
+.klemensbuttons:hover{
+    box-shadow: 8px 8px 24px 23px rgba(255, 255, 255, 1);
+}
+.closeKlemensVideo{
+    color: black;
+    cursor: pointer;
+    font-size: 50px;
+    margin: 0 auto;
+    transition: transform .7s ease-in-out;
+    
+}
+.closeDiv{
+    text-align: center;
+    z-index: 5;
+    width: 100%;
+}
+.closeKlemensVideo:hover{
+    color: red;
+    transform: rotate(360deg) scale(1.5);
 }

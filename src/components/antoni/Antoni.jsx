@@ -4,6 +4,7 @@ import Password from "../password/Password";
 import { useTheme } from "../contexts/StyleContext";
 import { Loading1 } from "../loading/Loading";
 import "./antoni.css"
+import { Col, Container, Row } from "react-bootstrap";
 
 const Antoni = () =>{
 const [loading, setLoading] =useState(true)
@@ -19,23 +20,22 @@ useEffect(()=>{
     return(
         <>
       {loading && <Loading1 />} 
-      <div style={antoniStyle} className="antoniContener">
-            <div className="antoniTitle">
+      {showPassword && <Password />}
+      <Container fluid style={antoniStyle} className="antoniContener">
+            <Row className="antoniTitle">
                 <h2>HELLO ANTONI</h2>
-            </div>
-                <div className="antonichoose">
+            </Row>
+                <Row className="antonichoose">
                 <h4 className="title">WYBIERZ PROSZĘ CO CHCESZ ZOBACZYĆ:</h4>
-                </div>
-                <div className="AntoniMediaBtns">
-                <div onClick={()=>setShowPassword(true)} className="movies"><h5>OTWÓRZ SWOJE FILMY</h5></div>
-                <div className="pictures"><h5>OTWÓRZ SWOJE ZDJĘCIA</h5></div>
-                </div>
-            
-            <div className="antoniExitBtnDiv">
-                <button type="button" className="btn antoniExitBtn" onClick={()=>history("/")}>WYJDŹ</button>
-            </div>
-            {showPassword && <Password />}
-        </div>
+                </Row>
+                <Row className="antoniExitBtnDiv">
+                    <Col><button type="button" className="btn antoniExitBtn" onClick={()=>history("/")}>WYJDŹ</button></Col>
+                </Row>
+                <Row className="AntoniMediaBtns">
+                    <Col onClick={()=>setShowPassword(true)} className="movies"><h5>OTWÓRZ SWOJE FILMY</h5></Col>
+                    <Col className="pictures"><h5>OTWÓRZ SWOJE ZDJĘCIA</h5></Col>
+                </Row>
+        </Container>
         </>
     )
 }

@@ -7,10 +7,22 @@
 .klemensChoose{
     text-align: center;
 }
-H4{
+h4{
+    margin-bottom: 2%;
     margin-top: 3%;
     font-size: 50px;
     text-shadow: 0 2px 1px black, 
     -1px 3px 1px rgb(28, 27, 27), 
     -2px 5px 1px rgb(71, 67, 67);
+}
+.exitIcon{
+    margin: 0%;
+    font-size: 60px;
+    color: black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.exitIcon:hover{
+    color: red;
+    transform: scale(1.5) rotate(360deg);
 }

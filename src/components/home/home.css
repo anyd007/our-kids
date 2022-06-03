@@ -39,14 +39,16 @@ h1{
   font-size: 30px;
   letter-spacing: 3px;
   z-index: 1;
-  transition: .7s ease;
+  transition: .7s ease-in;
 }
 .buttonsDiv:hover::after{
     visibility: visible;
     opacity: 1;
+    
 }
 .buttonsDiv:hover{
     filter: hue-rotate(90deg);
+    transform: rotateX(180deg);
     box-shadow: 8px 6px 21px 18px white
 }
 .buttonsDiv:active{
@@ -88,6 +90,7 @@ h1{
 }
    .buttonsDiv2:hover{
     filter: hue-rotate(180deg);
+    transform: rotateZ(180deg) scale(1.2);
     box-shadow: 8px 6px 21px 18px white
 }
 .buttonsDiv2:active{

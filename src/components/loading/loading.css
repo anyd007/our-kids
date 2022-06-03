@@ -40,7 +40,7 @@
     width: 90%;
     height: 34vh;
     text-align: center;
-    top: 8%;
+    top: 3%;
     left: 50%;
     transform: translate(-50%);
     z-index: 6;
@@ -90,7 +90,7 @@
 .infoLoader2{
     position: fixed;
     left: 50%;
-    top: 55%;
+    top: 20%;
     transform: translate(-50%);
 
 }

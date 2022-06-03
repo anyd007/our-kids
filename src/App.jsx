@@ -6,8 +6,8 @@ import KlementynaVideos from "./components/klementyna/klementynaVideos/Klementyn
 import Antoni from "./components/antoni/Antoni";
 import AntoniVideos from "./components/antoniVideos/AntoniVideo";
 import { Loading1 } from "./components/loading/Loading";
-import { ThemeProvider } from "./components/contexts/StyleContext";
-import { BootstrapProvider } from "./components/contexts/bootstrapContext";
+import { StyleProvider } from "./components/contexts/StyleContext";
+import ThemeProvider from "react-bootstrap/ThemeProvider"
 
 
 const App = () =>{
@@ -22,8 +22,8 @@ useEffect(()=>{
         {loading && <Loading1 />}
         <div className="app">
             <div className="content">
-                <ThemeProvider>
-                    <BootstrapProvider>
+                <StyleProvider>
+                    <ThemeProvider breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}>
                 <Router>
                     <Routes>
                         <Route exact path="/" element={<Home />} />
@@ -33,8 +33,8 @@ useEffect(()=>{
                         <Route path="/kelmentynaVideos" element={<KlementynaVideos />} />
                     </Routes>
                 </Router>
-                </BootstrapProvider>
                 </ThemeProvider>
+                </StyleProvider>
             </div>
         </div>
         </>

@@ -33,6 +33,7 @@ const handleOpenVideo=(e)=>{
     setKlemesVideos(x)
     setShowKlemensVideo(true)
     setLoading2(true)
+    setGetInfo1(false)
 }
 
     return(

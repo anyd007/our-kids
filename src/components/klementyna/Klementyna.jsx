@@ -3,7 +3,9 @@ import { useNavigate } from "react-router-dom";
 import Password2 from "../password/Password2"
 import { useTheme } from "../contexts/StyleContext";
 import { Loading1 } from "../loading/Loading";
+import { AiOutlineCloseSquare} from 'react-icons/ai';
 import "./klementyna.css"
+import { Col, Container, Row } from "react-bootstrap";
 
 const Klementyna = () =>{
 const [password, setPassword] = useState(false)
@@ -20,22 +22,24 @@ useEffect(()=>{
 return(
     <>
         {loading && <Loading1 />}
-        <div style={klemensStyle} className="klemensContener">
+    <Container fluid style={klemensStyle} className="klemensContener">
         {password && <Password2 />}
-        <div className="klemenstitle">
+        <Row className="klemenstitle">
             <h2>WITAJ KLEMENTYNKO</h2>
-        </div>
-        <div className="klemensChoose">
+        </Row>
+        <Row className="klemensChoose">
             <h4>WYBIERZ PROSZĘ CO CHCESZ ZROBIĆ</h4>
-            <div>
-                <div onClick={()=>setPassword(true)} className="movies"><h5>OTWÓRZ SWOJE FILMY</h5></div>
-                <div className="pictures"><h5>OTWÓRZ SWOJE ZDJĘCIA</h5></div>
-            </div>
-        </div>
-        <div className="btn">
-                <button type="button" className="btn klemensExitBtn" onClick={()=>history("/")}>WYJDŹ</button>
-            </div>
-        </div>
+        </Row>
+        <Row style={{textAlign:"center"}}>
+                <AiOutlineCloseSquare className="exitIcon" onClick={()=>history("/")} />
+        </Row>
+        <Row style={{textAlign:"center"}}>
+                <Col onClick={()=>setPassword(true)} className="movies"><h5>OTWÓRZ SWOJE FILMY</h5></Col>
+                <Col className="pictures"><h5>OTWÓRZ SWOJE ZDJĘCIA</h5></Col>
+        </Row>
+       
+        
+    </Container>
         
     </>
 )

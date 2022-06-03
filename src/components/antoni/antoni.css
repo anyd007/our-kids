@@ -28,17 +28,13 @@ h5{
     -2px 5px 1px rgb(71, 67, 67);
 }
 .AntoniMediaBtns{
-    position: relative;
-    height: auto;
-    width: 98%;
-    top: 10%;
+   text-align: center;
 }
 .movies{
+    display: inline-block;
+    /* float: left; */
+    margin: 1% 15% 5% 15%;
     border: 3px solid purple;
-    position: absolute;
-    left: 16%;
-    top: 65%;
-    transform: translateY(-40%);
     height: 200px;
     width: 200px;
     background-image: url("../imgs/person-watching-tv.png");
@@ -60,11 +56,9 @@ h5{
     
 }
 .pictures{
+    display: inline-block;
+    margin: 1% 15% 5% 15%;
     border: 3px solid purple;
-    position: absolute;
-    right: 16%;
-    top: 65%;
-    transform: translateY(-40%);
     height: 200px;
     width: 200px;
     background-image: url("../imgs/same-sex-parenting.png");
@@ -84,12 +78,9 @@ h5{
     
 }
 .btn{
+    margin: 0%;
     font-family: Appleberry, truetype;
     cursor: pointer;
-    position: absolute;
-    left: 50%;
-    top: 75%;
-    transform: translate(-50%,-50%);
     --glow-color: rgb(217, 176, 255);
     --glow-spread-color: rgba(191, 123, 255, 0.781);
     --enhanced-glow-color: rgb(231, 206, 255);
@@ -108,21 +99,6 @@ h5{
     text-shadow: 0 0 .5em var(--glow-color);
     transition: all 0.3s;
    }
-   
-   .btn::after {
-    pointer-events: none;
-    content: "";
-    position: absolute;
-    top: 120%;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: var(--glow-spread-color);
-    filter: blur(2em);
-    opacity: .7;
-    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
-   }
-   
    .btn:hover {
     color: var(--btn-color);
     background-color: var(--glow-color);
@@ -137,6 +113,5 @@ h5{
            inset 0 0 .5em .25em var(--glow-color);
    }    
    .antoniExitBtnDiv{
-       position: relative;
-       width: 100%;
+      text-align: center;
    }

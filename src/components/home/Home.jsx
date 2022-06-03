@@ -5,6 +5,7 @@ import { useTheme } from "../contexts/StyleContext";
 import btn1 from "../imgs/kementynaBtn.avif"
 import btn2 from "../imgs/antoni-btn.avif"
 import "./home.css";
+import { Col, Container, Row } from "react-bootstrap";
 
 const Home = () => {
   const [loading, setLoading]  = useState(false)
@@ -15,19 +16,15 @@ const Home = () => {
   }
   
   return (
-<div style={generalStyle} className="homeContener">
+<Container style={generalStyle} className="homeContener" fluid="md">
   <div className="title">
       <h1>NASZE KOCHANE SKARBY<br />KLEMENTYNA I ANTONI</h1>
   </div>
-  <button onClick={()=>history("/klementyna")} className="buttonsDiv" data-hover="WCISNIJ">
-      <img className="klementynaBtn" src={btn1} alt="klementyka przycisk" />
-      <div className="img-text">TUTAJ</div>
-    </button>
-  <button onClick={()=>handleAntoni()} className="buttonsDiv2" data-hover2="WCISNIJ">
-      <img className="antoniBtn" src={btn2} alt="antoni przycisk" />
-      <div className="img-text2">TUTAJ</div>
-  </button>
-</div>
+  <Row style={{textAlign:"center"}}>
+    <Col onClick={()=>history("/klementyna")} className="buttonsDiv" data-hover="WCISNIJ"></Col>
+    <Col onClick={()=>handleAntoni()} className="buttonsDiv2" data-hover2="WCISNIJ"></Col>
+  </Row>
+</Container>
   );
 };
 

@@ -89,7 +89,7 @@ export const useTheme = ()=>{
     return useContext(ThemeContext)
 }
 
-export const ThemeProvider = ({children})=>{
+export const StyleProvider = ({children})=>{
  const [generalStyle,setGeneralStyle] = useState(general)
  const [antoniStyle, setAntoniStyle] = useState(antoni)
  const [antoniMedias, setAntoniMedias] = useState(antoniMedia)

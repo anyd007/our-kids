@@ -36,8 +36,7 @@ const AntoniVideos = (props) => {
       }, 2500);
   })
   
-
-  return (
+return (
     <>
       <div style={antoniMedias} className="antoniMediaContener">
       {loading && <Loading1 />} 

@@ -35,7 +35,7 @@ return(
         </Row>
         <Row style={{textAlign:"center"}}>
                 <Col onClick={()=>setPassword(true)} className="movies"><h5>OTWÓRZ SWOJE FILMY</h5></Col>
-                <Col className="pictures"><h5>OTWÓRZ SWOJE ZDJĘCIA</h5></Col>
+                <Col onClick={()=>history("/klementynaPictures")} className="pictures"><h5>OTWÓRZ SWOJE ZDJĘCIA</h5></Col>
         </Row>
        
         

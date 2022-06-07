@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/home/Home";
 import Klementyna from "./components/klementyna/Klementyna";
 import KlementynaVideos from "./components/klementyna/klementynaVideos/KlementynaVideos";
+import KlementynaPictures from "./components/klementyna/klementynaPictures/KlementynaPictures";
 import Antoni from "./components/antoni/Antoni";
 import AntoniVideos from "./components/antoniVideos/AntoniVideo";
 import { Loading1 } from "./components/loading/Loading";
@@ -31,6 +32,7 @@ useEffect(()=>{
                         <Route path="/antoniVideos" element={<AntoniVideos />} />
                         <Route path="/klementyna" element={<Klementyna />} />
                         <Route path="/kelmentynaVideos" element={<KlementynaVideos />} />
+                        <Route path="/klementynaPictures" element ={<KlementynaPictures />} />
                     </Routes>
                 </Router>
                 </ThemeProvider>
